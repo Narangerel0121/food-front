@@ -6,7 +6,7 @@ export const Footer = () => {
     return (
         <div className="mt-100 bg-black text-white pt-15 overflow-hidden">
 
-            <div className="flex justify-around gap-6 bg-red-500 gap-8">
+            <div className="flex justify-around bg-red-500 gap-8">
                 <h5 className="font-semibold text-3xl py-7">Fresh fast delivered</h5>
                 <h5 className="font-semibold text-3xl py-7">Fresh fast delivered</h5>
                 <h5 className="font-semibold text-3xl py-7">Fresh fast delivered</h5>
