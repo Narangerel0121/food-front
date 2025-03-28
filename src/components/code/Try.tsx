@@ -64,7 +64,7 @@ const Info = ({ types }: { types: Types }) => {
             {
                 types.map((type) => {
                     return (
-                        <Card className="w-100 h-85 p-4">
+                        <Card key={nanoid()} className="w-100 h-85 p-4">
                             <div className="relative">
                                 <img src={`${type.image}`} className="h-52 w-90 object-cover rounded-xl" />
                                 <DialogDemo image={type.image} foodName={type.foodName} price={type.price} ingredients={type.ingredients}/>

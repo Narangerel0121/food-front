@@ -12,33 +12,32 @@ export function DialogDemo(props) {
                     <Plus size={16} color="#cf3030" />
                 </Button>
             </DialogTrigger>
-            <DialogContent className="sm:max-w-[425px]">
-                <div className="flex gap-10">
-                <div>
-                    <img src={`${props.image}`} />
-                </div>
-                <DialogHeader>
-                    <DialogTitle>{props.foodName}</DialogTitle>
-                    <DialogDescription>
-                       {props.ingredients}
-                    </DialogDescription>
-                    <div className="flex justify-around">
+            <DialogContent className="h-[412px] w-fit">
+                <div className="flex gap-4">
+                    <img src={`${props.image}`} className="w-1/2 rounded-sm" />
+                    <div>
                         <div>
-                            <p>total price</p>
-                            <p>{props.price}</p>
+                            <DialogTitle className="font-semibold text-3xl text-red-600">{props.foodName}</DialogTitle>
+                            <DialogDescription className="text-base font-normal">
+                                {props.ingredients}
+                            </DialogDescription>
                         </div>
-                        <div className="flex gap-2 items-center">
-                            <Button className="rounded-full"><Minus /></Button>
-                            <p>1</p>
-                            <Button className="rounded-full"><Plus /></Button>
+                        <div>
+                            <div className="flex justify-around gap-50">
+                                <div>
+                                    <div className="text-base font-normal text-left whitespace-nowrap">total price</div>
+                                    <p className="font-semibold text-2xl">{props.price}</p>
+                                </div>
+                                <div className="flex gap-3 items-center">
+                                    <Button className="bg-white text-black rounded-full w-11 h-11"><Minus /></Button>
+                                    <h3>1</h3>
+                                    <Button className="bg-white text-black rounded-full w-11 h-11"><Plus /></Button>
+                                </div>
+                            </div>
+                            <Button type="submit">Add to chart</Button>
                         </div>
                     </div>
-                </DialogHeader>
                 </div>
-
-                <DialogFooter>
-                    <Button type="submit">Add to chart</Button>
-                </DialogFooter>
             </DialogContent>
         </Dialog>
     )
