@@ -4,7 +4,7 @@ import { Header } from "@/components/code/Header";
 import { MainPage } from "@/components/code/MainPage";
 import { Try } from "@/components/code/Try";
 import { Main } from "next/document";
-import { Search } from "./search/page";
+import { Search } from "../components/code/Search";
 
 export default function Home() {
 
