@@ -15,10 +15,12 @@ import {
   TabsList,
   TabsTrigger,
 } from "@/components/ui/tabs"
- 
+import { Minus, Plus } from "lucide-react"
+
 export function TabsDemo() {
   return (
-    <Tabs defaultValue="account" className="w-[400px]">
+   <div className="bg-neutral-700 border rounded-2xl border-black p-8">
+     <Tabs defaultValue="account" className="w-[471px]">
       <TabsList className="grid w-full grid-cols-2">
         <TabsTrigger value="account">Cart</TabsTrigger>
         <TabsTrigger value="password">Order</TabsTrigger>
@@ -28,14 +30,32 @@ export function TabsDemo() {
           <CardHeader>
             <CardTitle>My cart</CardTitle>
             <CardDescription>
-              Make changes to your account here. Click save when you're done.
+              <div className="flex gap-5">
+                <img src="/assets/food1.png" className="w-[124px] h-[120px] mt-3 rounded-2xl" />
+                <div>
+                  <div>
+                    <h1>Sunshine Stackers</h1>
+                    <p>Fluffy pancakes stacked with fruits, cream, syrup, and powdered sugar.</p>
+                  </div>
+                  <div>
+                    <div className="flex justify-around gap-20">
+                      <div className="flex gap-3 items-center">
+                        <Button className="bg-white text-black rounded-full w-11 h-11"><Minus /></Button>
+                        <h3>1</h3>
+                        <Button className="bg-white text-black rounded-full w-11 h-11"><Plus /></Button>
+                      </div>
+                      <p className="font-semibold text-2xl">$122</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-2">
-            
+
           </CardContent>
-          <CardFooter>
-            <Button className="w-full rounded-full">Add food</Button>
+          <CardFooter >
+            <Button className="w-full rounded-full bg-white text-red-500 border-red-500">Add food</Button>
           </CardFooter>
         </Card>
       </TabsContent>
@@ -63,6 +83,7 @@ export function TabsDemo() {
         </Card>
       </TabsContent>
     </Tabs>
+   </div>
   )
 }
 
