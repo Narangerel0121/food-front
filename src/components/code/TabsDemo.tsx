@@ -83,6 +83,11 @@ export function TabsDemo() {
         </Card>
       </TabsContent>
     </Tabs>
+    <div className="bg-white w-[471px] h-[276px] rounded-2xl mt-4">
+      <h1>Payment info</h1>
+     <p>Items<span>-</span></p>
+     <p>Shipping<span>-</span></p>
+    </div>
    </div>
   )
 }
