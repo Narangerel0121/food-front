@@ -2,7 +2,7 @@ import { Plus } from "lucide-react"
 import { Button } from "../ui/button"
 import { Card } from "../ui/card"
 
-export const Menu = ({foods}) => {
+export const Menu = () => {
 
     return (
         <div className="mx-22 pt-20">

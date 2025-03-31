@@ -3,7 +3,14 @@ import { Button } from "../ui/button"
 import { DialogFooter, DialogHeader } from "../ui/dialog"
 import { Minus, Plus } from "lucide-react"
 
-export function DialogDemo(props) {
+type Props = {
+    image: string,
+    foodName: string,
+    ingredients: string,
+    price: string,
+}
+
+export function DialogDemo(props: Props) {
     console.log(props, "dialog")
     return (
         <Dialog >
