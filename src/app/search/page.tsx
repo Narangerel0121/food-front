@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { ChevronLeft } from "lucide-react"
 
-const Search = () => {
+export const Search = () => {
     return (
         <div className="grid grid-cols-3 relative w-screen h-screen">
       <div className="col-span-1 mt-80 mx-auto">

@@ -1,3 +1,5 @@
+import { nanoid } from "nanoid"
+
 const categories = [
     "Salads",
     "Pizzas",
@@ -11,7 +13,7 @@ const categories = [
 
 export const Categories = () => {
     return (
-        <div>
+        <div key={nanoid()}>
             {categories.map((category) => {
                 return(
                     <div>{category}</div>
