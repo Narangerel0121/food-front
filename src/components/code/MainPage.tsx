@@ -2,43 +2,43 @@ import { Plus } from "lucide-react"
 import { Button } from "../ui/button"
 import { Card } from "../ui/card"
 
-const Categories = [
-    {
-        categoryName: "Deserts",
-        foods: [
-            {
-                foodImage: "/assets/food1.png",
-                foodName: "Choco",
-                foodPrice: "$1.2",
-                foodIgredients: "Choco & strawberry",
-            },
-            {
-                foodImage: "/assets/food1.png",
-                foodName: "Fish",
-                foodPrice: "$1.2",
-                foodIgredients: "Milk & ice-cream",
-            },
-        ]
-    },
-    {
-        categoryName: "Sea food",
-        foods: [
-            {
-                foodImage: "/assets/food1.png",
-                foodName: "Orange",
-                foodPrice: "$1.2",
-                foodIgredients: "Oat & orange",
-            },
-            {
-                foodImage: "/assets/food1.png",
-                foodName: "Burger",
-                foodPrice: "$1.2",
-                foodIgredients: "Banana & choco",
-            },
-        ]
-    },
+// const Categories = [
+//     {
+//         categoryName: "Deserts",
+//         foods: [
+//             {
+//                 foodImage: "/assets/food1.png",
+//                 foodName: "Choco",
+//                 foodPrice: "$1.2",
+//                 foodIgredients: "Choco & strawberry",
+//             },
+//             {
+//                 foodImage: "/assets/food1.png",
+//                 foodName: "Fish",
+//                 foodPrice: "$1.2",
+//                 foodIgredients: "Milk & ice-cream",
+//             },
+//         ]
+//     },
+//     {
+//         categoryName: "Sea food",
+//         foods: [
+//             {
+//                 foodImage: "/assets/food1.png",
+//                 foodName: "Orange",
+//                 foodPrice: "$1.2",
+//                 foodIgredients: "Oat & orange",
+//             },
+//             {
+//                 foodImage: "/assets/food1.png",
+//                 foodName: "Burger",
+//                 foodPrice: "$1.2",
+//                 foodIgredients: "Banana & choco",
+//             },
+//         ]
+//     },
 
-]
+// ]
 
 export const MainPage = () => {
 

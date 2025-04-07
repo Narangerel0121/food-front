@@ -15,8 +15,8 @@ export default function Home() {
       <Header />
       <Categories />
       <img src="/assets/main.png" className="w-screen" />
-      <Try />
-      <MainPage />
+      {/* <Try /> */}
+      {/* <MainPage /> */}
       <Footer />
     </div>
   );
